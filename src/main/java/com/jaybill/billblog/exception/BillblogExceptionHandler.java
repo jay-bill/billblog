@@ -23,6 +23,8 @@ public class BillblogExceptionHandler  implements HandlerExceptionResolver{
 			return new ModelAndView("error-useraccount",map);
 		}else if(exception instanceof UserAccountExistedException){
 			return new ModelAndView("redirect:/error-user.jsp");
+		}else if(exception instanceof CantFindThisIdException){
+			return new ModelAndView("error-cantfindid",map);
 		}
 		return null;
 	}
