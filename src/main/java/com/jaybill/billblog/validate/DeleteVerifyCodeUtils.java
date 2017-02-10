@@ -17,6 +17,6 @@ public class DeleteVerifyCodeUtils {
 		//指向验证码
 		File file = new File(beforeImg);
 		//删除
-		file.delete();
+		file.delete();		
 	}
 }
